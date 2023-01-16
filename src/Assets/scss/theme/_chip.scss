@@ -1,0 +1,44 @@
+@use "sass:math";
+
+$chip-y-spacing: 15px;
+$chip-x-spacing: 5px;
+$chip-button-width: $chip-y-spacing + $chip-x-spacing * 2;
+$chip-border-radius: 15px;
+$chip-background: rgb(218 218 218);
+$chip-color: rgb(0 0 0);
+$chip-min-height: 36px;
+
+.chip {
+  display: inline-block;
+  // margin-top: $chip-x-spacing;
+  // margin-bottom: $chip-x-spacing;
+  // margin-left: $chip-x-spacing;
+  // margin-right: $chip-button-width;
+  position: relative;
+
+  .chip-value {
+    display: inline-block;
+    padding: $chip-x-spacing;
+    padding-left: $chip-y-spacing;
+    padding-right: math.div($chip-y-spacing, 2);
+    background: $chip-background;
+    color: $chip-color;
+    font-weight: lighter;
+    border-radius: $chip-border-radius 0 0 $chip-border-radius;
+  }
+
+  .chip-delete-button {
+    background: $chip-background;
+    color: $chip-color;
+    border: 0;
+    border-radius: 0 $chip-border-radius $chip-border-radius 0;
+    padding: $chip-x-spacing $chip-x-spacing * 2;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -$chip-button-width;
+    line-height: .5;
+    font-weight: bold;
+  }
+}

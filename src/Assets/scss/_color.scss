@@ -1,0 +1,45 @@
+/* -----------------------------------------------------------------------------------
+
+    Template Name: endless Admin
+    Template URI: themes.pixelstrap.com/endless
+    Description: This is Admin theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+*/
+@use "sass:meta";
+@use "sass:map";
+@use "functions" as fn;
+
+@import "theme/variables";
+
+:root {
+  --body-font-size: 14px;
+
+  font-size: var(--body-font-size);
+}
+
+.container-fluid {
+  margin: unset;
+  padding: unset;
+  width: calc(100% - 4.571rem);
+  margin-inline: auto;
+}
+
+@each $tenant in $tenants {
+  .color-#{index($tenants, $tenant)} {
+    $primary-color: map.get(nth($tenant, 2), "primary");
+    $secondary-color: map.get(nth($tenant, 2), "secondary");
+    $light-body-bg-color: rgba($primary-color, .1);
+
+    @include meta.load-css("style");
+
+    &:root {
+      --bc-raw: #{fn.hex2hsl($primary-color)};
+      --primary-color: hsl(var(--bc-raw));
+      --secondary-color: hsl(#{fn.hex2hsl($secondary-color)});
+      --brand-color: var(--primary-color);
+    }
+  }
+}

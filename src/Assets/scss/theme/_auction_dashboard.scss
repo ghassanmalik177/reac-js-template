@@ -1,0 +1,179 @@
+$page-theme-blue: $primary-color;
+
+.auction__dashboard {
+  .auction_head {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .project-widgets {
+    .counter {
+      margin-bottom: 15px;
+    }
+
+    h6 {
+      font-size: 18px;
+      color: #313131;
+    }
+  }
+
+  .insight_count {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .insight_status {
+    color: #9b9b9b;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .react-datepicker__input-container {
+    svg {
+      height: 16px;
+      right: 10px;
+      top: 7px;
+    }
+
+    .form-control {
+      padding-top: 0;
+      border-bottom: 1px solid $page-theme-blue !important;
+      border: none;
+      border-radius: 0 !important;
+      height: 30px !important;
+      padding-bottom: 0;
+      background-color: transparent;
+      padding-left: 0;
+    }
+
+    .react-datepicker__close-icon {
+      right: 30px;
+
+      &::after {
+        background: #e8e9ec;
+        border: 1px solid #d9d9da;
+        color: #2a3142;
+      }
+    }
+  }
+}
+
+.endingsoon__aution--list {
+  min-height: 365px;
+
+  .list-group-item {
+    border: 1px solid #f6f7fb;
+    padding: 20px 1.25rem;
+
+    .listing__order {
+      span {
+        color: #8e8d8d;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 15px;
+        display: block;
+      }
+
+      h6 {
+        color: #313131;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 14px;
+        margin-bottom: 0;
+      }
+
+      small {
+        font-weight: normal;
+        font-size: 12px;
+        color: #313131;
+        line-height: 13px;
+      }
+    }
+
+    .listing__offers {
+      span {
+        display: block;
+        font-weight: bold;
+        color: $page-theme-blue;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 2px;
+      }
+
+      small {
+        font-weight: normal;
+        color: #8a8a8a;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        display: block;
+      }
+    }
+  }
+
+  .endingsoon__auction--nodate {
+    min-height: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    p {
+      margin-bottom: 0;
+      height: 100%;
+    }
+  }
+}
+
+.topclient__dashboard-table {
+  min-height: 408px;
+
+  .card {
+    box-shadow: 0 0 0 0 rgba(68, 102, 242, 0);
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+  }
+
+  .rdt_TableCol_Sortable {
+    font-size: 16px;
+    min-width: 65px;
+  }
+
+  .gAuPhq {
+    border: 0 none !important;
+
+    .rdt_TableHeadRow {
+      border-bottom-color: #f6f7fb;
+    }
+
+    .rdt_Pagination {
+      border: 0 none;
+    }
+  }
+
+  .hYbSog {
+    max-height: 300px;
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0);
+      background-color: #fff;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ddd;
+      border: 1px solid #e8e8e8;
+    }
+  }
+
+  .rdt_Pagination {
+    border: 0 none;
+  }
+}

@@ -1,0 +1,142 @@
+/**=====================
+    25. Authentication CSS Start
+==========================**/
+
+.login-page {
+  --cf-primary: #0e53e6;
+  --cf-primary-hover: #0c43ba;
+
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 6vh 4vw;
+
+  .primary-color-text {
+    color: var(--cf-primary);
+  }
+
+  .login-page-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-content: start;
+    min-height: calc(100vh - 188px);
+    padding-block-start: 4.4vh;
+
+    @media screen and (min-width: 1024px) {
+      place-content: center;
+      padding-block-start: 6.4vh;
+    }
+  }
+
+  .login-illustration-col {
+    display: flex;
+    align-content: center;
+
+    .login-illustration {
+      min-width: 100%;
+      margin-inline-end: -3vw;
+      text-align: center;
+    }
+  }
+
+  .login-card-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 50;
+  }
+
+  .login-card {
+    border-radius: 4px;
+    padding-block: 4rem;
+    padding-inline: 2.5rem;
+    background-color: #fff;
+    margin-block-end: 2rem;
+    box-shadow: 0 0 20px rgba(#000, 0.07);
+    border: 1px solid #d8d8d8;
+
+    h4 {
+      margin-block-end: 3rem;
+    }
+
+    .form-control {
+      border-radius: 30px;
+      min-height: 50px;
+      padding-inline: 1.5rem;
+
+      &:focus {
+        border-color: var(--cf-primary);
+      }
+
+      &.is-invalid {
+        border-color: #f21717;
+      }
+    }
+
+    .invalid-error {
+      padding-inline-start: 1.5rem;
+    }
+
+    .has-icon {
+      .input-icon {
+        top: 16px;
+      }
+    }
+
+    .btn-login {
+      border-radius: 30px;
+      padding-block: 0.75rem;
+      font-size: 1.125rem;
+      background-color: var(--cf-primary);
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        background-color: var(--cf-primary-hover);
+      }
+    }
+
+    @media screen and (min-width: 1281px) {
+      padding-block: 5rem;
+      padding-inline: 3.5rem;
+    }
+  }
+
+  .power-by {
+    color: var(--cf-primary);
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      color: var(--cf-primary);
+      font-weight: 500;
+
+      &:hover {
+        color: var(--cf-primary-hover);
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    display: grid;
+    place-content: center;
+
+    .login-page-header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-page-body {
+      grid-template-columns: auto;
+      min-height: unset;
+
+      .login-illustration-col {
+        display: none;
+      }
+    }
+  }
+}
+
+/**=====================
+    25. Authentication CSS Ends
+==========================**/

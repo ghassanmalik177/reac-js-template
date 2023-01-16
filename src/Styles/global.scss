@@ -1,0 +1,74 @@
+body {
+  background-color: #f0f4fb;
+  font-size: inherit;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: black;
+
+  p {
+    color: #777;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #777;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  // .text-dark {
+  //   color: #2a3142 !important;
+  // }
+
+  // .card {
+  //   margin-bottom: 30px;
+  //   border: 0;
+  //   transition: all .3s ease;
+  //   letter-spacing: .5px;
+  //   border-radius: 8px;
+  //   box-shadow: 1px 5px 24px 0 rgb(0 159 43 / 5%);
+  // }
+
+  // .form-group {
+  //   margin-bottom: 24px;
+  // }
+
+  .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+
+  .page-body-wrapper {
+    .no-header {
+      margin-top: 80px;
+      padding-top: 16px;
+    }
+  }
+
+  .bg-white {
+    background-color: #fff !important;
+  }
+
+  // .theme-tab {
+  //   width: 75%;
+  // }
+
+  .react-tabs {
+    width: 100%;
+  }
+}

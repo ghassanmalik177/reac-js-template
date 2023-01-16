@@ -1,0 +1,31 @@
+{
+  "Language": "اردو",
+  "Done": "ہو گیا",
+  "Cancel": "منسوخ کریں",
+  "Name": "نام",
+
+  "Dashboard": "ڈیش بورڈ",
+  "By Types": "اقسام کے لحاظ سے",
+  "By Cities": "شہروں کے لحاظ سے",
+  "Loading Chart": "لوڈنگ چارٹ",
+  
+  "Leads": "لیڈز",
+  "Add Lead": "لیڈ شامل کریں",
+  "Update Lead": "لیڈ کو اپ ڈیٹ کریں",
+  "Status": "حالت",
+  "City": "شہر",
+  "Inspection Type": "معائنہ کی قسم",
+  "Create Quick Link": "فوری لنک بنائیں",
+  "Manage Quick Link": "فوری لنک کا انتظام کریں", 
+
+
+  "Schedules":"شیڈولز",
+  "today": "آج",
+  "Reports": "رپورٹیں",
+  "Payments": "ادائیگی",
+  "Admin": "ایڈمن",
+  "Users": "صارفین",
+  "Teams": "ٹیمیں",
+
+  "Select Role": "ٹیمیں"
+}

@@ -1,0 +1,51 @@
+// Utils
+//
+// Space between inline child elements
+// To be used with flex/inline-flex until `gap` is a living standard
+@each $i in 4, 8, 12, 16, 20, 24, 32, 40, 48, 54 {
+  .spbwx#{$i} {
+    > * + * {
+      margin-left: $i * 1px;
+    }
+  }
+
+  .spbwy#{$i} {
+    > * + * {
+      margin-top: $i * 1px;
+    }
+  }
+
+  .py-#{$i} {
+    padding-block: $i * 1px !important;
+  }
+
+  .px-#{$i} {
+    padding-inline: $i * 1px !important;
+  }
+
+  .p-#{$i} {
+    padding: $i * 1px !important;
+  }
+
+  .mb-#{$i} {
+    margin-block-end: $i * 1px !important;
+  }
+}
+
+.overlay-open {
+  overflow: hidden;
+}
+
+.stick-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+.center-contents {
+  display: grid;
+  place-content: center;
+}
+
+.span-all {
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,210 @@
+@media (min-width: 992px) {
+  .modal-lg {
+    &.deposit_model {
+      max-width: 900px;
+    }
+
+    &.inventory_model {
+      max-width: 970px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .modal_attachments {
+    max-width: 700px;
+  }
+}
+
+.deposit_model {
+  .modal-body {
+    h4 {
+      margin-bottom: 0;
+    }
+
+    .more-filters {
+      margin-inline-start: auto;
+      margin-inline-end: 5px;
+      cursor: pointer;
+
+      svg {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.deposit_main {
+  margin-bottom: 20px;
+
+  .slip__content-top {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+
+    .deposit__pill-card {
+      width: auto;
+      padding: 0 25px 0 0;
+      display: inline-flex;
+      margin-bottom: 20px;
+
+      .deposit__icon {
+        @include border-radius(100%);
+
+        width: 46px;
+        height: 46px;
+        background: #fff;
+        padding: 5px;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 10px;
+        border: 1px solid #deeaed;
+        vertical-align: middle;
+        margin-bottom: 0;
+
+        svg {
+          color: #000;
+          vertical-align: middle;
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      .deposit__pill-text {
+        margin-top: 4px;
+
+        p {
+          color: #313131;
+          font-size: 12px;
+          line-height: 16px;
+          margin-bottom: 3px;
+          letter-spacing: 0;
+        }
+
+        h5 {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 600;
+          color: #313131;
+          margin-bottom: 0;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+
+  .timeline-small {
+    max-height: 300px;
+    padding: 10px 0;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0);
+      background-color: #fff;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ddd;
+      border: 1px solid #e8e8e8;
+    }
+
+    .media {
+      margin-bottom: 50px;
+
+      .timeline-round {
+        top: -5px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        span {
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+        &.timeline-line-1 {
+          &::after {
+            height: 40px;
+            bottom: -45px;
+          }
+        }
+      }
+
+      .media-body {
+        span {
+          font-size: 14px;
+          margin-bottom: 5px;
+          line-height: 14px;
+          color: #625f5f;
+        }
+
+        h6 {
+          font-size: 14px;
+          font-weight: 600;
+          color: #000;
+          margin-bottom: 5px;
+          line-height: 14px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          color: $page-theme-blue;
+          margin-bottom: 0;
+          line-height: 14px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        .timeline-round {
+          &.timeline-line-1 {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .deposit_pic {
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+    border: 1px solid #efefef;
+    min-height: 200px;
+
+    img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .maximize__icon {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      background: #fff;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      padding: 7px;
+      text-align: center;
+      box-shadow: 2px 1px 1px #efefef;
+      cursor: pointer;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
